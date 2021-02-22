@@ -78,7 +78,7 @@ public class Main {
             TextMessage message = session.createTextMessage();
             String input = "";
             Scanner sc = new Scanner(System.in);
-            while(!((input.equals("q")) || (input.equals("Q")))){
+            while(!(input.equals("end") )){
                 System.out.print("Enter Live Score : ");
                 input = sc.nextLine();
                 message.setText(input);
